@@ -1,0 +1,286 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #1a1a1a; /* Dark black background */
+    color: #ffffff; /* White text */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%; /* Adjusted for smaller screens */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: rgba(26, 26, 26, 0.9); /* Semi-transparent dark background for header */
+    color: #ffd700; /* Golden yellow text */
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fixed position to keep header always visible */
+    width: 100%;
+    z-index: 1000; /* Ensure header is above other content */
+    top: 0; /* Ensure it starts from the top */
+}
+
+header nav {
+    text-align: right;
+    margin-top: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block; /* Inline block for navigation items */
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #ffd700; /* Golden yellow */
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px; /* Slightly larger font size */
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffffff; /* White hover color */
+}
+
+main {
+    padding: 120px 0 20px; /* Adjusted padding to ensure content starts below header */
+}
+
+.hero {
+    background-color: #1a1a1a; /* Dark black background */
+    color: #ffd700; /* Golden yellow text */
+    padding: 120px 0;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.dev {
+    margin-top: -30px; /* Adjusted for spacing */
+}
+
+.about, .projects, .contact, .skills {
+    padding: 40px 0;
+    background-color: #1a1a1a; /* Dark black background for sections */
+    color: #ffffff; /* White text */
+}
+
+.about .container {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-around; /* Space items evenly */
+}
+
+.profile-photo-container {
+    width: 200px;
+    height: 200px;
+    position: relative; /* Position relative for absolute positioning */
+}
+
+.profile-photo {
+    width: 150%;
+    height: 150%;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.about-text {
+    max-width: 600px; /* Limit text width */
+    text-align: center;
+}
+
+.about h2, .projects h2, .skills h2, .contact h2 {
+    text-align: center;
+    font-size: 36px; /* Larger font size */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.project-item {
+    margin-bottom: 30px;
+    background-color: #1a1a1a; /* Dark black */
+    color: #ffffff; /* White text */
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border-radius: 8px; /* Rounded corners */
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(255, 215, 0, 0.5); /* Golden yellow shadow on hover */
+}
+
+.project-item h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.project-item p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.skill {
+    text-align: center;
+    width: 30%;
+}
+
+.skill h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.skill ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill ul li {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.contact {
+    background-color: #1a1a1a; /* Dark black background */
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.contact h2 {
+    font-size: 36px; /* Larger font size */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.contact a {
+    color: #ffd700; /* Golden yellow */
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.contact a:hover {
+    color: #ffffff; /* White hover color */
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Hover animation for project items */
+.project-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+    
+    header nav {
+        text-align: center; /* Center align navigation */
+    }
+    
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .hero {
+        padding: 120px 0;
+    }
+    
+    .about .container {
+        flex-direction: column; /* Stack profile photo and text vertically on smaller screens */
+        text-align: center;
+    }
+    
+    .profile-photo-container {
+        margin-left: 0; /* Remove left margin on smaller screens */
+        margin-bottom: 20px; /* Space below photo */
+        width: 150px; /* Adjust width for smaller screens */
+        height: 150px; /* Adjust height for smaller screens */
+    }
+    
+    .profile-photo {
+        width: 100%;
+        height: 100%;
+        position: static; /* Reset position to static */
+        margin-bottom: 10px; /* Space between photo and text */
+    }
+    
+    .about-text {
+        max-width: 100%;
+        text-align: center; /* Center text */
+    }
+    
+    .about h2, .projects h2, .skills h2, .contact h2 {
+        font-size: 30px; /* Adjusted font size for smaller screens */
+    }
+    
+    .project-item {
+        padding: 20px;
+    }
+    
+    .skills-list {
+        flex-wrap: wrap;
+    }
+    
+    .skill {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
