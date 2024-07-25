@@ -2,63 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiva="X-UA-Compatiable" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="Myportfolio.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
+    <header class="header">
+         <a href="#" class="logo">Myportfolio</a>
            
-            <nav>
-                <ul>
-                    <li><a href="#ome">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+            <nav class="navbar">
+                
+                    <a href="#Home" class="act"  >Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                
             </nav>
-        </div>
+        
     </header>
 
-    <main>
+
+    
        
 
-        <section id="about" class="about">
-            <div class="container">
-                <div class="profile-photo-container">
-                    <img src="profile-photo.jpg" alt="Profile Photo" class="profile-photo">
-                </div>
-                <section id="home" class="hero">
-                   <h3> I'm</h3> <h1>   Sridharan,</h1></br><h3 class="dev"> a web developer  passionate about creating meaningful web applications and solutions</h3>
+                <section  class="home">
+                    <div class="home-content">
+                  <h1>Hi, I'm Sridharan</h1>
+                  <h3>Fortent Developer</h3>
+                  <p>I am a web developer passionate about creating meaningful web applications and solutions. I specialize in front-end development with HTML, CSS, and JavaScript, and have experience with frameworks like React. My goal is to combine creativity and technical skills to build user-friendly and responsive websites that provide great user experiences.</p>
+                  <div class="btn-box">
+                    <a href="">Hire Me</a>
+                    <a href="">Download cv </a>
+                  </div>
                 </section>
-                
-            </section>
-                <div class="about-content">
-                  
-                    <div class="about-text">
+                <section class="about">
+                    <div class="main">
+                        
+                        <img src="Images/pro.jpeg" class="img" alt="">
+                        <div class="about-text">
                         <h2>About Me</h2>
                         <p>I am a web developer passionate about creating meaningful web applications and solutions. I specialize in front-end development with HTML, CSS, and JavaScript, and have experience with frameworks like React. My goal is to combine creativity and technical skills to build user-friendly and responsive websites that provide great user experiences.</p>
-                        <p>Email: example@example.com</p>
-                    </div>
+                   
+                     </div>
+                    
                 </div>
-            </div>
+                </section>
+           
+                
+            
         
 
         <section id="projects" class="projects">
-            <div class="container">
+          
                 <h2>Projects</h2>
                 <div class="project-item">
-                    <h3>Project 1</h3>
-                    <p>Description of Project 1.</p>
+                    
+                    <h3><a href="#project1">Education Handlears</a></h3>
+                    <p>Built a robust online course website offering an intuitive user experience, comprehensive course catalogs, and interactive learning tools to support students and educators."</p>
                 </div>
                 <div class="project-item">
-                    <h3>Project 2</h3>
-                    <p>Description of Project 2.</p>
+                    <h3><a href="#project1">SKCT</a></h3>
+                    <p>Developed a dynamic college website featuring seamless navigation, comprehensive program information, and an engaging user interface to enhance student and faculty interaction.".</p>
                 </div>
-            </div>
+            
         </section>
 
         <section id="skills" class="skills">
@@ -97,7 +106,7 @@
                 <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank">Connect with me</a></p>
             </div>
         </section>
-    </main>
+    
 
     <footer>
         <div class="container">

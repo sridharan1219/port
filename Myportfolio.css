@@ -1,83 +1,218 @@
-/* Reset some default styles */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins',  sans-serif;
 }
 
-/* Global styles */
+
 body {
-    font-family: 'Roboto', Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #1a1a1a; /* Dark black background */
-    color: #ffffff; /* White text */
-    margin: 0;
-    padding: 0;
+   
+    background:#0c0c0c;
+   color: #ededed;
 }
 
-.container {
-    width: 90%; /* Adjusted for smaller screens */
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
 
-header {
-    background-color: rgba(26, 26, 26, 0.9); /* Semi-transparent dark background for header */
-    color: #ffd700; /* Golden yellow text */
-    padding: 20px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: fixed; /* Fixed position to keep header always visible */
+.header {
+    position: fixed; 
+    top: 0; 
+    left:0;
     width: 100%;
-    z-index: 1000; /* Ensure header is above other content */
-    top: 0; /* Ensure it starts from the top */
+    background:#0f0f0f;
+    padding: 20px 10%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+    z-index: 100; 
+    
 }
-
-header nav {
-    text-align: right;
-    margin-top: 20px;
-}
-
-header nav ul {
-    list-style-type: none;
-}
-
-header nav ul li {
-    display: inline-block; /* Inline block for navigation items */
-    margin-left: 20px;
-}
-
-header nav ul li a {
-    color: #ffd700; /* Golden yellow */
+.logo{
+    position: relative;
+    font-size: 25px;
+    color:white;
     text-decoration: none;
+    font-weight: 600;
+
+}
+.logo::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    background: #0f031a;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+ .navbar a {
+   font-size: 18px;
+   color: white;
+   text-decoration: none;
+   font-weight: 500;
+   margin-left: 35px;
+   transition: .3s;
+}
+.navbar a:hover,
+.navbar a.act{
+    color: #00abf0;
+}
+
+
+.home {
+    height: 100vh;
+    /* background: url('Images/pro.jpeg') no-repeat; */
+   
+    background-position: right;
+    display:flex;
+    align-items: center;
+    padding : 0 10%;
+}
+.home-content {
+    max-width: 600px;
+}
+.home-content h1{
+    position: relative;
+    font-size: 56px;
     font-weight: 700;
-    font-size: 18px; /* Slightly larger font size */
-    transition: color 0.3s ease;
+    line-height: 1.2;
+}
+.home-content h1::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    background:#0c0c0c;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
+.home-content h3{
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color:#00abf0;
+}
+.home-content h3::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    background: #0c0c0c;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.3s;
+}
+.home-content p{
+    position: relative;
+    font-size:16px; 
+    margin: 20px 0 40px;
+}
+.home-content p::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    background:#0c0c0c;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.6s;
+}
+.home-content .btn-box{
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+    
+}
+.home-content .btn-box::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    background:#0c0c0c;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.9s;
+    z-index: 2;
+
+}
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid aqua;
+    border-radius: 8px;
+    font-size: 19px;
+    color:#081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: #00abf0;
 }
 
-header nav ul li a:hover {
-    color: #ffffff; /* White hover color */
+@keyframes showRight {
+    100%{
+        width: 0;
+    }
+    
 }
 
-main {
-    padding: 120px 0 20px; /* Adjusted padding to ensure content starts below header */
+.about{
+    width:100%;
+    padding :100 0px;
+    background-color: #191919;
 }
-
-.hero {
-    background-color: #1a1a1a; /* Dark black background */
-    color: #ffd700; /* Golden yellow text */
-    padding: 120px 0;
+.about img{
+    height:auto;
+    width:430px;
 }
+.about-text{
+    width: 550px;
+}
+.main{
+    width:1130px;
+    max-width:95%;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
 
-.hero h1 {
-    font-size: 36px;
+
+}
+.about-text h2{
+    color:#00abf0;
+    font-size:75px;
+    text-transform: capitalize;
     margin-bottom: 20px;
 }
-
-.hero h3 {
-    font-size: 24px;
-    margin-bottom: 30px;
+.about-text p{
+    color:#cacaca;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size:18px;
+    margin-bottom: 45px;
 }
+
+
+
+
+
+
+
+
 
 .dev {
     margin-top: -30px; /* Adjusted for spacing */
@@ -85,58 +220,36 @@ main {
 
 .about, .projects, .contact, .skills {
     padding: 40px 0;
-    background-color: #1a1a1a; /* Dark black background for sections */
-    color: #ffffff; /* White text */
+   
+    color: #333333; /* Dark text */
 }
 
-.about .container {
-    display: flex;
-    align-items: center; /* Center items vertically */
-    justify-content: space-around; /* Space items evenly */
-}
 
-.profile-photo-container {
-    width: 200px;
-    height: 200px;
-    position: relative; /* Position relative for absolute positioning */
-}
 
-.profile-photo {
-    width: 150%;
-    height: 150%;
-    border-radius: 10%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: absolute;
-    top: 0;
-    right: 0;
-}
 
-.about-text {
-    max-width: 600px; /* Limit text width */
-    text-align: center;
-}
 
-.about h2, .projects h2, .skills h2, .contact h2 {
+ .projects h2, .skills h2, .contact h2 {
     text-align: center;
     font-size: 36px; /* Larger font size */
     margin-bottom: 30px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    color: #00abf0;
 }
 
 .project-item {
     margin-bottom: 30px;
-    background-color: #1a1a1a; /* Dark black */
-    color: #ffffff; /* White text */
+    background-color: #222121; /* White */
+    color: #d8cbcb; /* Dark text */
     padding: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(51, 50, 50, 0.1);
     transition: transform 0.3s ease;
     border-radius: 8px; /* Rounded corners */
 }
 
 .project-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(255, 215, 0, 0.5); /* Golden yellow shadow on hover */
+    box-shadow: 0 6px 12px rgba(99, 100, 100, 0.5); /* Light blue shadow on hover */
 }
 
 .project-item h3 {
@@ -146,7 +259,7 @@ main {
 }
 
 .project-item p {
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.6;
 }
 
@@ -178,7 +291,7 @@ main {
 }
 
 .contact {
-    background-color: #1a1a1a; /* Dark black background */
+    background-color: #000000; /* Blue background */
     color: #ffffff;
     text-align: center;
     padding: 60px 0;
@@ -197,7 +310,7 @@ main {
 }
 
 .contact a {
-    color: #ffd700; /* Golden yellow */
+    color: #ff9f43; /* Light orange */
     text-decoration: underline;
     transition: color 0.3s ease;
 }
@@ -207,7 +320,7 @@ main {
 }
 
 footer {
-    background-color: #1a1a1a;
+    background-color: #000000; /* Blue footer background */
     color: #ffffff;
     text-align: center;
     padding: 20px 0;
@@ -243,32 +356,14 @@ footer {
         padding: 120px 0;
     }
     
-    .about .container {
-        flex-direction: column; /* Stack profile photo and text vertically on smaller screens */
-        text-align: center;
-    }
     
-    .profile-photo-container {
-        margin-left: 0; /* Remove left margin on smaller screens */
-        margin-bottom: 20px; /* Space below photo */
-        width: 150px; /* Adjust width for smaller screens */
-        height: 150px; /* Adjust height for smaller screens */
-    }
     
-    .profile-photo {
-        width: 100%;
-        height: 100%;
-        position: static; /* Reset position to static */
-        margin-bottom: 10px; /* Space between photo and text */
-    }
+   
     
-    .about-text {
-        max-width: 100%;
-        text-align: center; /* Center text */
-    }
+    
     
     .about h2, .projects h2, .skills h2, .contact h2 {
-        font-size: 30px; /* Adjusted font size for smaller screens */
+        font-size: 30px; 
     }
     
     .project-item {
