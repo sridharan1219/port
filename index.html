@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,10 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header class="header">
          <a href="#" class="logo">Myportfolio</a>
            
-            <nav class="navbar">
+            <nav class="navbar" style="transition-duration:1s ;">
                 
                     <a href="#Home" class="act"  >Home</a>
                     <a href="#about">About</a>
@@ -26,25 +27,39 @@
 
 
     
-       
-
+       <section id="Home" >
+                <div class="hero">
                 <section  class="home">
                     <div class="home-content">
                   <h1>Hi, I'm Sridharan</h1>
-                  <h3>Fortent Developer</h3>
-                  <p>I am a web developer passionate about creating meaningful web applications and solutions. I specialize in front-end development with HTML, CSS, and JavaScript, and have experience with frameworks like React. My goal is to combine creativity and technical skills to build user-friendly and responsive websites that provide great user experiences.</p>
+                  <h3>Frontend Developer</h3>
+                  <p>I am a web developer passionate about creating meaningful web application. I specialize in front-end development with HTML, CSS, and JavaScript, and have experience with frameworks like React. My goal is to combine creativity and technical skills to build user-friendly and responsive websites that provide great user experiences.</p>
                   <div class="btn-box">
                     <a href="">Hire Me</a>
-                    <a href="">Download cv </a>
+                    <a href="./Images/727822tuec222 resume.pdf" download="MY_RESUME.pdf">Download CV</a>
                   </div>
                 </section>
-                <section class="about">
+
+
+                <section class="black">
+                    <div class="back">
+                        <img src="Images/robo.jpg" class="img1" alt="">
+                    </div>
+                </section>
+                </div>
+            </section>
+
+
+
+
+
+                <section class="about" id="about">
                     <div class="main">
                         
-                        <img src="Images/pro.jpeg" class="img" alt="">
+                        <img src="Images/boy.jpg" class="img" alt="">
                         <div class="about-text">
                         <h2>About Me</h2>
-                        <p>I am a web developer passionate about creating meaningful web applications and solutions. I specialize in front-end development with HTML, CSS, and JavaScript, and have experience with frameworks like React. My goal is to combine creativity and technical skills to build user-friendly and responsive websites that provide great user experiences.</p>
+                        <p>I am a web developer passionate about creating meaningful web application and solutions. I specialize in front-end development with HTML, CSS, and JavaScript, and have experience with frameworks like React. My goal is to combine creativity and technical skills to build user-friendly and responsive websites that provide great user experiences.</p>
                    
                      </div>
                     
@@ -53,51 +68,47 @@
            
                 
             
+                <section id="projects" class="projects">
+                    <h2>Projects</h2>
+                    <div class="project-container" style="display: flex; gap: 100px;">
+                        <div class="project-item" style="flex: 1; min-width: 200px;">
+                            <h3>Education Handlears</h3>
+                            <img src="Images/project1.jpg" alt="Education Handlears" class="project-image">
+                        </div>
+
+
+                        <div class="project-item" style="flex: 1; min-width: 200px;">
+                            <h3>SKCT</h3>
+                            <img src="Images/project2.png" alt="SKCT" class="project-image">
+                            
+                           
+                        </div>
+                    </div>
+                </section>
+                
+                
+
+
+
+<section id="skills"class="skills">
+    <div class="skill-content">
+
+
+
+      <h2>SKI<span>LLS</span></h2>
+      <div class="cards">
+        <div class="card" style="background-image: url(Images/html.png);background-repeat: round;"></div>
+        <div class="card" style="background-image: url(Images/css.png);background-repeat: round;">  </div>
+        <div class="card" style="background-image: url(Images/Java-Logo.png);background-repeat: round;"> </div>
+        <div class="card"  style="background-image: url(Images/react.png);background-repeat: round;"> </div>
+        <div class="card" style="background-image: url(Images/CPP.png);background-repeat: round;"> </div>
+         <div class="card" style="background-image: url(Images/JavaScript-Symbol.png);background-repeat: round;"> </div>
+        <div class="card" style="background-image: url(Images/node.png);background-repeat: round;"> </div>
+        <div class="card" style="background-image: url(Images/dsa.png);background-repeat: round;"> </div>
         
-
-        <section id="projects" class="projects">
-          
-                <h2>Projects</h2>
-                <div class="project-item">
-                    
-                    <h3><a href="#project1">Education Handlears</a></h3>
-                    <p>Built a robust online course website offering an intuitive user experience, comprehensive course catalogs, and interactive learning tools to support students and educators."</p>
-                </div>
-                <div class="project-item">
-                    <h3><a href="#project1">SKCT</a></h3>
-                    <p>Developed a dynamic college website featuring seamless navigation, comprehensive program information, and an engaging user interface to enhance student and faculty interaction.".</p>
-                </div>
-            
-        </section>
-
-        <section id="skills" class="skills">
-            <div class="container">
-                <h2>Skills</h2>
-                <div class="skills-list">
-                    <div class="skill">
-                        <h3>HTML</h3>
-                        <ul>
-                            <li>Semantic HTML</li>
-                            <li>Accessibility</li>
-                        </ul>
-                    </div>
-                    <div class="skill">
-                        <h3>CSS</h3>
-                        <ul>
-                            <li>Flexbox</li>
-                            <li>Grid Layout</li>
-                        </ul>
-                    </div>
-                    <div class="skill">
-                        <h3>JavaScript</h3>
-                        <ul>
-                            <li>ES6+</li>
-                            <li>React</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+      </div>
+    </div>
+  </section>
 
         <section id="contact" class="contact">
             <div class="container">
@@ -114,4 +125,9 @@
         </div>
     </footer>
 </body>
-</html>
+</html> 
+
+
+
+
+
